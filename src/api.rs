@@ -52,6 +52,8 @@ impl ApiClient {
              let data: LrcLibResponse = response.json().await?;
              if let Some(lyrics) = data.synced_lyrics {
                  return Ok(Some(lyrics));
+             } else if let Some(lyrics) = data.plain_lyrics {
+                 return Ok(Some(lyrics));
              }
         }
 
