@@ -4,7 +4,7 @@
 
 ## Features
 
-- **Automatic Metadata Extraction**: Reads artist, title, album, and duration from audio files using [lofty](https://github.com/Serial-0/lofty-rs).
+- **Automatic Metadata Extraction**: Reads artist, title, album, and duration from audio files using [lofty](https://github.com/Serial-ATA/lofty-rs).
 - **LRCLIB Integration**: Fetches high-quality synced lyrics from the LRCLIB database.
 - **Batch Processing**: Scans directories recursively for audio files.
 - **Structure Preservation**: Mirrors the input directory structure in the output directory.
@@ -16,7 +16,7 @@
 Ensure you have [Rust and Cargo](https://rustup.rs/) installed.
 
 ```bash
-git clone https://github.com/yourusername/lrclibfetch.git
+git clone https://github.com/Aethar01/lrclibfetch.git
 cd lrclibfetch
 cargo build --release
 ```
