@@ -21,6 +21,13 @@ cd lrclibfetch
 cargo build --release
 ```
 
+### For Arch based systems
+
+A package for lrclibfetch can be found on the AUR [here](https://aur.archlinux.org/packages/lrclibfetch), or use your favourite AUR helper (yay, paru, etc.):
+```bash
+yay -S lrclibfetch
+```
+
 ## Usage
 
 ```bash
