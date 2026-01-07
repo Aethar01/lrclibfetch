@@ -12,3 +12,9 @@ serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 tokio = { version = "1", features = ["full"] }
 walkdir = "2.5"
+
+[profile.release]
+strip = true
+lto = true
+opt-level = "z"
+codegen-units = 1
