@@ -1,0 +1,15 @@
+use std::path::PathBuf;
+use clap::Parser;
+
+#[derive(Parser, Debug)]
+#[command(author, version, about, long_about = None)]
+pub struct Args {
+    #[arg(short, long, default_value = ".")]
+    pub base_dir: PathBuf,
+
+    #[arg(short, long)]
+    pub input: PathBuf,
+
+    #[arg(short, long)]
+    pub output_dir: PathBuf,
+}
