@@ -10,7 +10,6 @@ pub struct LrcLibResponse {
     #[serde(rename = "syncedLyrics")]
     pub synced_lyrics: Option<String>,
     #[serde(rename = "plainLyrics")]
-    #[allow(dead_code)]
     pub plain_lyrics: Option<String>,
 }
 
@@ -53,6 +52,7 @@ impl ApiClient {
              if let Some(lyrics) = data.synced_lyrics {
                  return Ok(Some(lyrics));
              } else if let Some(lyrics) = data.plain_lyrics {
+                 println!("Warning: only plain lyrics found.");
                  return Ok(Some(lyrics));
              }
         }
